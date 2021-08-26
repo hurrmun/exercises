@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Score Keeper</title>
+</head>
+
+<body>
+    <section id="scoreKeeper">
+        <div>
+            <img src="https://images.unsplash.com/photo-1584813539806-2538b8d918c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80"
+                alt="paddle and ball" class="image">
+            <h2>Ping Pong Score Keeper</h2>
+            <b id="score"><span id="p1display">0</span> to <span id="p2display">0</span></b>
+            <p class="instructions">Use the buttons below to keep score</p>
+            <div class="select">
+                <label for="selectMax">Playing to</label>
+                <select name="max" id="selectMax">
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <span>(Win by 2 points)</span>
+            </div>
+            <div class="buttonGroup">
+                <button id="addp1">+1 Player One</button>
+                <button id="addp2">+1 Player Two</button>
+                <button id="reset">New Game</button>
+            </div>
+        </div>
+    </section>
+    <section id="winsKeeper">
+        <h2>Total Wins</h2>
+        <div id="playerWins">
+            <div>
+                <h3>Player 1</h3>
+                <p id="p1wins">0</p>
+            </div>
+            <div>
+                <h3>Player 2</h3>
+                <p id="p2wins">0</p>
+            </div>
+            <button id="resetWins">Reset</button>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
